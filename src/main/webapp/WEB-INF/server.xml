@@ -1,0 +1,4 @@
+<JDBCRealm className="org.apache.catalina.realm.JDBCRealm"
+    driverName="org.postgresql.Driver"
+    connectionURL="jdbc:postgresql://localhost:5432/guessNum?user=postgres&amp;password=Sairam@1215"
+    userTable="signup" userNameCol="name" userCredCol="password"/>

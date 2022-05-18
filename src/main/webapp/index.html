@@ -1,0 +1,115 @@
+<!-- <!DOCTYPE html>
+<head>
+    <title>Guess a Number</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#submit').click(function(){
+			var resultbuff = $('#gnum').val();
+            var $find = $('.find');
+			$.ajax({
+				type:'POST',
+				data: {gnum: resultbuff},
+				url: 'validate',
+				success: function(result){
+                    k=result.split('*');
+                    if(k.length==1){
+                        $('#result1').html(result);
+                        $('#submit').css('display','none');
+                        $('#HOME').css('display','block');
+                    }
+                    else{
+                        for(let i=0;i<k[0].length;i++){
+                            if(k[1][i]=='B'){
+                                $('#result1').append("<span style=\"color:blue; dislay:inline\"><b>"+k[0][i]+"</b></span>");
+                            }
+                            else if(k[1][i]=='G'){
+                                $('#result1').append("<span style=\"color:green; dislay:inline\"><b>"+k[0][i]+"</b></span>");
+                            }
+                            else{
+                                $('#result1').append("<span style=\"dislay:inline\"><b>"+k[0][i]+"</b></span>");
+                            }
+                        }
+                        $('#result1').append('<br>');
+                    }
+                }     
+
+			});
+		});
+	});
+	</script>
+    <style>
+        body{
+            /* background-image: url('https://img.freepik.com/free-photo/dark-street-background-reflection-blue-red-neon-asphalt_129911-31.jpg?w=1060');
+            background-repeat: no-repeat;
+            background-size: cover; */
+            background-color: rgb(246, 242, 242);
+            height: 50%;
+            width: 50%;
+        }
+        #gnum{
+            width: 12vw;
+            height: 40px;
+        }
+        #submit,#HOME{
+            margin-left: 2vw;
+            width: 8vw;
+            
+            margin-top: 10px;
+
+        }
+        .container {
+            max-width: 180px;
+            margin: auto;
+            padding: 20px;
+
+          }
+        .split {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .right {
+            right: 0;
+            background-color: #000000;
+            
+        }
+        #result1 {
+            border: 1px inset #ccc;
+            background-color: rgb(246, 242, 242);
+            font: small courier;
+            border:2px solid #FF7F50 ;
+            border-radius: 6px;
+            height: 90vh;
+            width: 60vh;
+            margin-left: 20vh;
+            text-overflow:ellipsis;
+            -webkit-line-clamp: 15; 
+        }
+ 	</style>
+</head>
+<body>
+    <h1 style="color: #FF7F50; text-align: center;text-shadow: 0mm;font-family: sans-serif;"><b>GUESS A NUMBER</b></h1>
+    <div class="container" style="align-items: center;">
+        <form>
+            <h1 style="color: #FF7F50; font-size: 25px;margin-left: 10px;"><b>ENTER NUMBER</b></h1>
+            <input type="text" id="gnum" name="number" placeholder="Guess Number" autocomplete="off" style="border: #FF7F50;border-style: double;align-items: center;"><br>
+
+            <input type="button" id="submit" value="CHECK" style="border:#FF7F50;border-style:groove;color: #FF7F50;align-items: center;border-radius: 2px;">
+            
+        </form>
+        <br>
+        <a href="index.html"><button style="display: none;border:#FF7F50;border-style:groove;color: #FF7F50;align-items: center;border-radius: 2px;" id="HOME">HOME</button></a>
+    </div>  
+     <div class="split right" style="background-color: rgb(246, 242, 242);">
+        <div class="centered">
+            <div id="result1" type="text" style="position:relative;top:-5px;color:red"></div>
+        </div>
+    </div>  
+</body> -->

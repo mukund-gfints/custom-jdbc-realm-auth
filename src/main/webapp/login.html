@@ -1,0 +1,210 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+  *{
+    padding: 0;
+    margin: 0;
+    color: #FF7F50;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+  }
+  body {
+      background-color: #ffffff;
+  }
+  h1 {
+      letter-spacing: -1px;
+  }
+  a {
+    color: #FF7F50;
+    text-decoration: unset;
+  }
+  .login-root {
+      background: #fff;
+      display: flex;
+      width: 100%;
+      min-height: 100vh;
+      overflow: hidden;
+  }
+  .loginbackground {
+      min-height: 692px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 0;
+      overflow: hidden;
+  }
+  .flex-flex {
+      display: flex;
+  }
+  .align-center {
+    align-items: center; 
+  }
+  .center-center {
+    align-items: center;
+    justify-content: center;
+  }
+  .box-root {
+      box-sizing: border-box;
+  }
+  .flex-direction--column {
+      -ms-flex-direction: column;
+      flex-direction: column;
+  }
+  .box-divider--light-all-2 {
+      box-shadow: inset 0 0 0 2px #e3e8ee;
+  }
+  .box-background--blue {
+      background-color: #FF7F50;
+  }
+  .box-background--white {
+    background-color: #ffffff; 
+  }
+  .box-background--blue800 {
+      background-color: #FF7F50;
+  }
+  .box-background--gray100 {
+      background-color: #e3e8ee;
+  }
+  .box-background--cyan200 {
+      background-color: #7fd3ed;
+  }
+  .padding-top--64 {
+    padding-top: 64px;
+  }
+  .padding-top--24 {
+    padding-top: 24px;
+  }
+  .padding-top--48 {
+    padding-top: 48px;
+  }
+  .padding-bottom--24 {
+    padding-bottom: 24px;
+  }
+  .padding-horizontal--48 {
+    padding: 48px;
+  }
+  .padding-bottom--15 {
+    padding-bottom: 15px;
+  }
+  
+  
+  .flex-justifyContent--center {
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .formbg {
+      margin: 0px auto;
+      width: 100%;
+      max-width: 448px;
+      background: white;
+      border-radius: 4px;
+      box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+  }
+  span {
+      display: block;
+      font-size: 20px;
+      line-height: 28px;
+      color: #FF7F50;
+  }
+  label {
+      margin-bottom: 10px;
+  }
+  .grid--50-50 {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
+  }
+  
+  .field input {
+      font-size: 16px;
+      line-height: 28px;
+      padding: 8px 16px;
+      width: 100%;
+      min-height: 44px;
+      border: unset;
+      border-radius: 4px;
+      outline-color: black;
+      background-color: rgb(255, 255, 255);
+      box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  }
+  
+  button[type="login"] {
+      background-color: #ff8550;
+      box-shadow: white;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      align-items: center;
+  }
+  .footer-link span {
+      font-size: 14px;
+      text-align: center;
+  }
+  .listing a {
+      color: #697386;
+      font-weight: 600;
+      margin: 0 10px;
+  }
+ 
+
+</style>
+
+</head>
+<body>
+  <div class="login-root">
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+      <div class="loginbackground box-background--white padding-top--64">
+        <div class="loginbackground-gridContainer">
+          <div class="box-root flex-flex" style="grid-area: top / start / 8 / end;">
+            <div class="box-root" style="flex-grow: 1;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+        <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+          <h1>GUESS THE NUMBER</a></h1>
+        </div>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+              <span class="padding-bottom--15">Sign in/Sign up</span>
+              <form action="login">
+                <div class="field padding-bottom--24">
+                  <label for="username" >Username</label>
+                  <input type="text" name="name" autocomplete="off" required>
+                  
+                </div>
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    <label for="password">Password</label>
+                  </div>
+                  <input type="password" name="password" required>
+                </div>
+                <div class="field padding-bottom--24">
+                    <input type="submit" value="SIGN IN"></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
