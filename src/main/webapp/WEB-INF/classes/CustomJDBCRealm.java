@@ -32,7 +32,7 @@ public class CustomJDBCRealm extends JdbcRealm {
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 
         UsernamePasswordToken upToken = (UsernamePasswordToken) token;
-        String username = upToken.getUsername();
+        String username = "postgres";
 
         // Null username is invalid
         if (username == null) {
@@ -42,9 +42,9 @@ public class CustomJDBCRealm extends JdbcRealm {
         Connection conn = null;
         SimpleAuthenticationInfo info = null;
         try {
-            conn = dataSource.getConnection();
-
-            String password = null;
+            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/guessNum", "postgres", "Sairam@1215");//postgres - username ; Sairam@1215 - password
+            
+            String password = "Sairam@1215";
             String salt = null;
             switch (saltStyle) {
             case NO_SALT:
